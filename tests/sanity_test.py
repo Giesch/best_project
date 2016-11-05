@@ -88,7 +88,7 @@ tests = [
                  os.path.join(file_locations,'reference_output/alu-sra.out')), "alu"),
     ("ALU sltu test",
         TestCase(os.path.join(file_locations, 'alu-stlu.circ'),
-            os.path.join(file_locations, 'reference_output/alu-stlu.out')), "stlu"),
+            os.path.join(file_locations, 'reference_output/alu-stlu.out')), "alu"),
     ("RegFile read/write test",
         TestCase(os.path.join(file_locations,'regfile-read_write.circ'),
                  os.path.join(file_locations,'reference_output/regfile-read_write.out')), "regfile"),
