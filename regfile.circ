@@ -151,7 +151,7 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     <wire from="(800,800)" to="(800,810)"/>
     <wire from="(800,1040)" to="(800,1050)"/>
     <wire from="(190,310)" to="(190,320)"/>
-    <wire from="(730,170)" to="(730,190)"/>
+    <wire from="(730,170)" to="(730,200)"/>
     <wire from="(170,240)" to="(190,240)"/>
     <wire from="(900,360)" to="(930,360)"/>
     <wire from="(20,210)" to="(20,580)"/>
@@ -162,7 +162,7 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     <wire from="(1100,200)" to="(1100,420)"/>
     <wire from="(910,200)" to="(1100,200)"/>
     <wire from="(20,210)" to="(190,210)"/>
-    <wire from="(640,170)" to="(640,190)"/>
+    <wire from="(640,170)" to="(640,200)"/>
     <wire from="(910,200)" to="(910,240)"/>
     <wire from="(160,570)" to="(160,610)"/>
     <wire from="(190,440)" to="(190,480)"/>
@@ -195,7 +195,7 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     <wire from="(260,920)" to="(260,930)"/>
     <wire from="(420,920)" to="(420,940)"/>
     <wire from="(20,580)" to="(190,580)"/>
-    <wire from="(550,170)" to="(550,190)"/>
+    <wire from="(550,170)" to="(550,200)"/>
     <wire from="(400,190)" to="(440,190)"/>
     <wire from="(400,70)" to="(870,70)"/>
     <wire from="(170,420)" to="(190,420)"/>
@@ -206,8 +206,8 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     <wire from="(190,260)" to="(190,270)"/>
     <wire from="(480,190)" to="(530,190)"/>
     <wire from="(910,420)" to="(1100,420)"/>
-    <wire from="(460,170)" to="(460,190)"/>
-    <wire from="(820,170)" to="(820,190)"/>
+    <wire from="(820,170)" to="(820,200)"/>
+    <wire from="(460,170)" to="(460,200)"/>
     <wire from="(910,380)" to="(910,420)"/>
     <wire from="(170,550)" to="(190,550)"/>
     <comp lib="0" loc="(720,710)" name="Tunnel">
@@ -242,6 +242,10 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <a name="facing" val="east"/>
       <a name="width" val="32"/>
       <a name="label" val="$out14"/>
+    </comp>
+    <comp lib="0" loc="(730,200)" name="Tunnel">
+      <a name="width" val="32"/>
+      <a name="label" val="$out31"/>
     </comp>
     <comp lib="2" loc="(270,920)" name="Decoder">
       <a name="select" val="5"/>
@@ -627,6 +631,10 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <a name="width" val="32"/>
       <a name="label" val="$out07"/>
     </comp>
+    <comp lib="0" loc="(820,200)" name="Tunnel">
+      <a name="width" val="32"/>
+      <a name="label" val="$out29"/>
+    </comp>
     <comp lib="0" loc="(290,690)" name="Tunnel">
       <a name="label" val="W09"/>
     </comp>
@@ -634,6 +642,10 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <a name="facing" val="east"/>
       <a name="width" val="32"/>
       <a name="label" val="$out06"/>
+    </comp>
+    <comp lib="0" loc="(640,200)" name="Tunnel">
+      <a name="width" val="32"/>
+      <a name="label" val="$out18"/>
     </comp>
     <comp lib="6" loc="(109,203)" name="Text">
       <a name="text" val="INPUTS to your circuit"/>
@@ -810,6 +822,10 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     </comp>
     <comp lib="4" loc="(670,870)" name="Register">
       <a name="width" val="32"/>
+    </comp>
+    <comp lib="0" loc="(550,200)" name="Tunnel">
+      <a name="width" val="32"/>
+      <a name="label" val="$out17"/>
     </comp>
     <comp lib="0" loc="(440,820)" name="Tunnel">
       <a name="width" val="32"/>
@@ -1401,6 +1417,10 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     <comp lib="0" loc="(190,290)" name="Tunnel">
       <a name="width" val="5"/>
       <a name="label" val="read_reg2"/>
+    </comp>
+    <comp lib="0" loc="(460,200)" name="Tunnel">
+      <a name="width" val="32"/>
+      <a name="label" val="$out16"/>
     </comp>
     <comp lib="0" loc="(170,290)" name="Pin">
       <a name="width" val="5"/>
