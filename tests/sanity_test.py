@@ -33,7 +33,7 @@ class TestCase():
                             stdout=subprocess.PIPE)
     try:
       reference = open(self.tracefile)
-      debug_buffer = [] 
+      debug_buffer = []
       passed = compare_unbounded(proc.stdout,reference,debug_buffer)
     finally:
       os.kill(proc.pid,signal.SIGTERM)
@@ -55,7 +55,7 @@ def compare_unbounded(student_out, reference_out, debug):
     line1 = student_out.readline()
     line2 = reference_out.readline()
     debug.append((line1.rstrip(), line2.rstrip()))
-   
+
     if line2 == '':
       break
     if line1 != line2:
@@ -76,20 +76,23 @@ def run_tests(tests):
     else:
       print "\tFAILED test: %s (%s)" % (description, reason)
       tests_failed += 1
-  
+
   print "Passed %d/%d tests" % (tests_passed, (tests_passed + tests_failed))
 
 tests = [
-  ("ALU add (with overflow) test",
+    ("ALU add (with overflow) test",
         TestCase(os.path.join(file_locations,'alu-add.circ'),
                  os.path.join(file_locations,'reference_output/alu-add.out')), "alu"),
-  ("ALU arithmetic right shift test",
+    ("ALU arithmetic right shift test",
         TestCase(os.path.join(file_locations,'alu-sra.circ'),
                  os.path.join(file_locations,'reference_output/alu-sra.out')), "alu"),
-  ("RegFile read/write test",
+    ("ALU sltu test",
+        TestCase(os.path.join(file_locations, 'alu-stlu.circ'),
+            os.path.join(file_locations, 'reference_output/alu-stlu.out')), "stlu"),
+    ("RegFile read/write test",
         TestCase(os.path.join(file_locations,'regfile-read_write.circ'),
                  os.path.join(file_locations,'reference_output/regfile-read_write.out')), "regfile"),
-  ("RegFile $zero test",
+    ("RegFile $zero test",
         TestCase(os.path.join(file_locations,'regfile-zero.circ'),
                  os.path.join(file_locations,'reference_output/regfile-zero.out')), "regfile"),
 ]
