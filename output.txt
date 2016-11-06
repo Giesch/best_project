@@ -1,0 +1,47 @@
+cp alu.circ regfile.circ tests
+cd tests && python ./sanity_test.py | tee ../TEST_LOG
+Traceback (most recent call last):
+  File "./sanity_test.py", line 125, in <module>
+    run_tests(tests)
+  File "./sanity_test.py", line 72, in run_tests
+    test_passed, reason = test(typ)
+  File "./sanity_test.py", line 48, in __call__
+    wtr.writerow([dec.bin2hex(b) for b in row[0].split('\t')])
+  File "/home/giesch/Repos/best_project/tests/decode_out.py", line 9, in bin2hex
+    return "{:x}".format(int(b, 2)).zfill(n)
+ValueError: invalid literal for int() with base 2: ''
+Testing files...
+	PASSED test: ALU add (with overflow) test
+	PASSED test: ALU arithmetic right shift test
+	PASSED test: ALU sll test
+Test #	OF	Eq	Result
+00	0	0	00000001
+00	0	0	00000001
+01	0	0	00000001
+01	0	0	00000001
+02	0	0	00005555
+02	0	0	00005555
+03	0	0	0000ffff
+03	0	0	0000ffff
+	FAILED test: ALU srl test (Did not match expected output)
+	PASSED test: ALU sltu test
+	PASSED test: ALU slt test
+	PASSED test: ALU slt test
+	PASSED test: ALU or test
+	PASSED test: ALU subu test
+	PASSED test: ALU sub test
+	PASSED test: RegFile read/write test
+	PASSED test: RegFile $zero test
+Test #	$s0 Value	$s1 Value	$s2 Value	$ra Value	$sp Value	Read Data 1	Read Data 2
+00	00000000	00000000	00000000	00000000	00000000	00000000	00000000
+00	00000000	00000000	00000000	00000000	00000000	00000000	00000000
+01	00000000	00000000	00000000	00000000	00000000	00000000	00000000
+01	00000000	00000000	00000000	00000000	00000000	00000000	00000000
+02	00000000	00000000	00000000	00000000	00000000	00000000	00000000
+02	00000000	00000000	00000000	00000000	00000000	00000000	00000000
+03	00000000	00000000	00000000	00000000	00000000	00000000	00000000
+03	00000000	00000000	00000000	00000000	00000000	00000000	00000000
+04	00000000	00000000	00000000	00000000	00000000	00000000	00000000
+04	00000000	00000000	00000000	00000000	00000000	00000000	00000000
+05	00000000	00000000	00000000	00000000	00000000	00000000	00000000
+05	00000000	00000000	00000000	00000000	00000000	00000000	00000000
