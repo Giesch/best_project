@@ -184,8 +184,8 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     <wire from="(90,140)" to="(90,160)"/>
     <wire from="(150,100)" to="(150,130)"/>
     <wire from="(180,160)" to="(180,190)"/>
-    <wire from="(330,190)" to="(370,190)"/>
     <wire from="(330,110)" to="(370,110)"/>
+    <wire from="(330,190)" to="(370,190)"/>
     <wire from="(140,50)" to="(170,50)"/>
     <wire from="(410,110)" to="(570,110)"/>
     <wire from="(170,160)" to="(170,330)"/>
@@ -219,7 +219,7 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     <comp lib="4" loc="(330,330)" name="ROM">
       <a name="dataWidth" val="4"/>
       <a name="contents">addr/data: 8 4
-32*a
+32*9
 </a>
     </comp>
     <comp lib="0" loc="(630,150)" name="Pin">
@@ -232,7 +232,7 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     <comp lib="4" loc="(330,110)" name="ROM">
       <a name="dataWidth" val="32"/>
       <a name="contents">addr/data: 8 32
-ffffffff 0 aaaaaaaa ffff0000 f0000000
+ffffffff ffffffff aaaaaaaa ffff0000 f0000000
 </a>
     </comp>
     <comp lib="0" loc="(310,40)" name="Pin">
