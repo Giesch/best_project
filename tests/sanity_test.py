@@ -115,7 +115,7 @@ tests = [
                  os.path.join(file_locations,'reference_output/regfile-zero.out')), "regfile"),
     ("RegFile r/w all",
         TestCase(os.path.join(file_locations,'regfile-testAllRegs.circ'),
-                 os.path.join(file_locations,'reference_output/regfile-testAllRegs.out')), "regfile"),
+                 os.path.join(file_locations,'reference_output/regfile-testAllRegs.out')), "regfile")
 ]
 
 if __name__ == '__main__':
