@@ -3,3 +3,4 @@ tests/alu.circ
 tests/regfile.circ
 TEST_LOG
 *pyc
+tests/ajkScratch.txt
