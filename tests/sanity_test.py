@@ -113,7 +113,7 @@ tests = [
     ("RegFile $zero test",
         TestCase(os.path.join(file_locations,'regfile-zero.circ'),
                  os.path.join(file_locations,'reference_output/regfile-zero.out')), "regfile"),
-    ("RegFile r/w all",
+    ("RegFile testAllRegs",
         TestCase(os.path.join(file_locations,'regfile-testAllRegs.circ'),
                  os.path.join(file_locations,'reference_output/regfile-testAllRegs.out')), "regfile")
 ]
