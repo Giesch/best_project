@@ -165,66 +165,6 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     <wire from="(410,250)" to="(480,250)"/>
     <wire from="(430,150)" to="(500,150)"/>
     <wire from="(300,270)" to="(500,270)"/>
-    <comp lib="0" loc="(270,120)" name="Pin">
-      <a name="facing" val="west"/>
-      <a name="output" val="true"/>
-      <a name="label" val="halt"/>
-      <a name="labelloc" val="east"/>
-    </comp>
-    <comp lib="3" loc="(260,120)" name="Comparator">
-      <a name="mode" val="unsigned"/>
-    </comp>
-    <comp lib="3" loc="(140,140)" name="Adder"/>
-    <comp lib="4" loc="(250,220)" name="ROM">
-      <a name="dataWidth" val="32"/>
-      <a name="contents">addr/data: 8 32
-1 2 3 4 5 6 7 8
-9 a b c d e 10 11
-12 13 14 15 16 17 18 19
-1a 1b 1c
-</a>
-    </comp>
-    <comp lib="0" loc="(270,160)" name="Tunnel">
-      <a name="width" val="32"/>
-      <a name="label" val="WriteData"/>
-    </comp>
-    <comp lib="7" loc="(560,210)" name="main"/>
-    <comp lib="4" loc="(70,220)" name="Register"/>
-    <comp lib="4" loc="(250,330)" name="ROM">
-      <a name="dataWidth" val="16"/>
-      <a name="contents">addr/data: 8 16
-8400 8800 8C00 9000 9400 9800 9C00 A000
-A400 A800 AC00 B000 B400 B800 BC00 C400
-C800 CC00 D000 D400 D800 DC00 E000 E400
-E800 EC00 F000 F400 F800 FC00 2000 4000
-6000 8000 A000 C000 E000 8000 9000 A000
-B000 C000 D000 E000 F000 8800 9000 9800
-A000 A800 B000 B800 C000 C800 D000 D800
-E000 E800 F000 F800
-</a>
-    </comp>
-    <comp lib="0" loc="(340,100)" name="Pin">
-      <a name="facing" val="south"/>
-      <a name="output" val="true"/>
-      <a name="width" val="32"/>
-      <a name="label" val="Reg 0 Value"/>
-      <a name="labelloc" val="north"/>
-    </comp>
-    <comp lib="0" loc="(610,100)" name="Pin">
-      <a name="facing" val="south"/>
-      <a name="output" val="true"/>
-      <a name="width" val="32"/>
-      <a name="label" val="Reg 3 Value"/>
-      <a name="labelloc" val="north"/>
-    </comp>
-    <comp lib="0" loc="(160,380)" name="Constant">
-      <a name="facing" val="north"/>
-    </comp>
-    <comp lib="0" loc="(390,230)" name="Tunnel">
-      <a name="facing" val="east"/>
-      <a name="width" val="32"/>
-      <a name="label" val="WriteData"/>
-    </comp>
     <comp lib="0" loc="(280,230)" name="Splitter">
       <a name="fanout" val="4"/>
       <a name="incoming" val="16"/>
@@ -244,31 +184,16 @@ E000 E800 F000 F800
       <a name="bit14" val="2"/>
       <a name="bit15" val="3"/>
     </comp>
-    <comp lib="0" loc="(660,290)" name="Pin">
-      <a name="facing" val="west"/>
-      <a name="output" val="true"/>
-      <a name="width" val="32"/>
-      <a name="label" val="Read Data 2"/>
-      <a name="labelloc" val="east"/>
+    <comp lib="0" loc="(450,430)" name="Clock">
+      <a name="facing" val="north"/>
     </comp>
-    <comp lib="0" loc="(180,80)" name="Pin">
-      <a name="facing" val="south"/>
-      <a name="output" val="true"/>
+    <comp lib="0" loc="(160,380)" name="Constant">
+      <a name="facing" val="north"/>
+    </comp>
+    <comp lib="0" loc="(90,130)" name="Constant">
       <a name="width" val="8"/>
-      <a name="label" val="test #"/>
-      <a name="labelloc" val="north"/>
-    </comp>
-    <comp lib="6" loc="(378,477)" name="Text">
-      <a name="text" val="There should be no blue/red wires here, and the result shouldn't be x's."/>
     </comp>
     <comp lib="0" loc="(30,230)" name="Constant"/>
-    <comp lib="0" loc="(660,200)" name="Pin">
-      <a name="facing" val="west"/>
-      <a name="output" val="true"/>
-      <a name="width" val="32"/>
-      <a name="label" val="Read Data 1"/>
-      <a name="labelloc" val="east"/>
-    </comp>
     <comp lib="0" loc="(520,100)" name="Pin">
       <a name="facing" val="south"/>
       <a name="output" val="true"/>
@@ -276,15 +201,20 @@ E000 E800 F000 F800
       <a name="label" val="Reg 2 Value"/>
       <a name="labelloc" val="north"/>
     </comp>
-    <comp lib="0" loc="(700,100)" name="Pin">
-      <a name="facing" val="south"/>
+    <comp lib="7" loc="(560,210)" name="main"/>
+    <comp lib="0" loc="(660,290)" name="Pin">
+      <a name="facing" val="west"/>
       <a name="output" val="true"/>
       <a name="width" val="32"/>
-      <a name="label" val="Reg 4 Value"/>
-      <a name="labelloc" val="north"/>
+      <a name="label" val="Read Data 2"/>
+      <a name="labelloc" val="east"/>
     </comp>
-    <comp lib="6" loc="(397,291)" name="Text">
-      <a name="text" val="YOUR REGFILE SHOULD FIT IN HERE!"/>
+    <comp lib="0" loc="(270,160)" name="Tunnel">
+      <a name="width" val="32"/>
+      <a name="label" val="WriteData"/>
+    </comp>
+    <comp lib="6" loc="(378,477)" name="Text">
+      <a name="text" val="There should be no blue/red wires here, and the result shouldn't be x's."/>
     </comp>
     <comp lib="0" loc="(430,100)" name="Pin">
       <a name="facing" val="south"/>
@@ -293,15 +223,85 @@ E000 E800 F000 F800
       <a name="label" val="Reg 1 Value"/>
       <a name="labelloc" val="north"/>
     </comp>
+    <comp lib="0" loc="(270,120)" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+      <a name="label" val="halt"/>
+      <a name="labelloc" val="east"/>
+    </comp>
+    <comp lib="4" loc="(250,330)" name="ROM">
+      <a name="dataWidth" val="16"/>
+      <a name="contents">addr/data: 8 16
+8400 8800 8c00 9000 9400 9800 9c00 a000
+a400 a800 ac00 b000 b400 b800 bc00 c400
+c800 cc00 d000 d400 d800 dc00 e000 e400
+e800 ec00 f000 f400 f800 fc00 2000 4000
+6000 8000 a000 c000 e000 8000 9000 a000
+b000 c000 d000 e000 f000 8800 9000 9800
+a000 a800 b000 b800 c000 c800 d000 d800
+e000 e800 f000 f800
+</a>
+    </comp>
     <comp lib="0" loc="(210,110)" name="Constant">
       <a name="width" val="8"/>
-      <a name="value" val="0x5"/>
+      <a name="value" val="0x3c"/>
     </comp>
-    <comp lib="0" loc="(450,430)" name="Clock">
-      <a name="facing" val="north"/>
+    <comp lib="4" loc="(250,220)" name="ROM">
+      <a name="dataWidth" val="32"/>
+      <a name="contents">addr/data: 8 32
+1 2 3 4 5 6 7 8
+9 a b c d e 10 11
+12 13 14 15 16 17 18 19
+1a 1b 1c
+</a>
     </comp>
-    <comp lib="0" loc="(90,130)" name="Constant">
+    <comp lib="0" loc="(340,100)" name="Pin">
+      <a name="facing" val="south"/>
+      <a name="output" val="true"/>
+      <a name="width" val="32"/>
+      <a name="label" val="Reg 0 Value"/>
+      <a name="labelloc" val="north"/>
+    </comp>
+    <comp lib="4" loc="(70,220)" name="Register"/>
+    <comp lib="0" loc="(390,230)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="width" val="32"/>
+      <a name="label" val="WriteData"/>
+    </comp>
+    <comp lib="0" loc="(180,80)" name="Pin">
+      <a name="facing" val="south"/>
+      <a name="output" val="true"/>
       <a name="width" val="8"/>
+      <a name="label" val="test #"/>
+      <a name="labelloc" val="north"/>
+    </comp>
+    <comp lib="0" loc="(610,100)" name="Pin">
+      <a name="facing" val="south"/>
+      <a name="output" val="true"/>
+      <a name="width" val="32"/>
+      <a name="label" val="Reg 3 Value"/>
+      <a name="labelloc" val="north"/>
+    </comp>
+    <comp lib="3" loc="(260,120)" name="Comparator">
+      <a name="mode" val="unsigned"/>
+    </comp>
+    <comp lib="0" loc="(700,100)" name="Pin">
+      <a name="facing" val="south"/>
+      <a name="output" val="true"/>
+      <a name="width" val="32"/>
+      <a name="label" val="Reg 4 Value"/>
+      <a name="labelloc" val="north"/>
+    </comp>
+    <comp lib="3" loc="(140,140)" name="Adder"/>
+    <comp lib="0" loc="(660,200)" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+      <a name="width" val="32"/>
+      <a name="label" val="Read Data 1"/>
+      <a name="labelloc" val="east"/>
+    </comp>
+    <comp lib="6" loc="(397,291)" name="Text">
+      <a name="text" val="YOUR REGFILE SHOULD FIT IN HERE!"/>
     </comp>
   </circuit>
 </project>

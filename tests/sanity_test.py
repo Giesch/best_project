@@ -45,6 +45,8 @@ class TestCase():
         print "CANNOT FORMAT test type=",typ
       else:
           for row in debug_buffer:
+            # print row[0].split('\t')
+            # print row[1].split('\t')
             wtr.writerow([dec.bin2hex(b) for b in row[0].split('\t')])
             wtr.writerow([dec.bin2hex(b) for b in row[1].split('\t')])
 
