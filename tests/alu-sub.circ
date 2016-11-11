@@ -206,20 +206,27 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     <wire from="(90,120)" to="(100,120)"/>
     <wire from="(40,100)" to="(40,160)"/>
     <wire from="(430,150)" to="(630,150)"/>
-    <comp lib="4" loc="(330,190)" name="ROM">
+    <comp lib="4" loc="(330,110)" name="ROM">
       <a name="dataWidth" val="32"/>
       <a name="contents">addr/data: 8 32
-0 ffffffff 55555555 f0000000 ffff0000
+ffffffff 0 aaaaaaaa ffff0000 f0000000 0 7fffffff
 </a>
     </comp>
-    <comp lib="0" loc="(310,40)" name="Pin">
-      <a name="facing" val="west"/>
-      <a name="output" val="true"/>
-      <a name="label" val="halt"/>
-      <a name="labelloc" val="east"/>
+    <comp lib="6" loc="(443,407)" name="Text">
+      <a name="text" val="There should be no blue/red wires here, and the result shouldn't be x's."/>
     </comp>
-    <comp lib="6" loc="(412,64)" name="Text">
-      <a name="text" val="YOUR ALU SHOULD FIT HERE"/>
+    <comp lib="0" loc="(60,200)" name="Clock">
+      <a name="facing" val="north"/>
+    </comp>
+    <comp lib="0" loc="(90,120)" name="Constant">
+      <a name="width" val="8"/>
+    </comp>
+    <comp lib="3" loc="(290,40)" name="Comparator">
+      <a name="mode" val="unsigned"/>
+    </comp>
+    <comp lib="0" loc="(230,30)" name="Constant">
+      <a name="width" val="8"/>
+      <a name="value" val="0x7"/>
     </comp>
     <comp lib="0" loc="(570,110)" name="Pin">
       <a name="facing" val="west"/>
@@ -227,7 +234,21 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <a name="label" val="Equal"/>
       <a name="labelloc" val="east"/>
     </comp>
-    <comp lib="4" loc="(80,160)" name="Register"/>
+    <comp lib="4" loc="(330,330)" name="ROM">
+      <a name="dataWidth" val="4"/>
+      <a name="contents">addr/data: 8 4
+32*7
+</a>
+    </comp>
+    <comp lib="6" loc="(412,64)" name="Text">
+      <a name="text" val="YOUR ALU SHOULD FIT HERE"/>
+    </comp>
+    <comp lib="0" loc="(570,80)" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+      <a name="label" val="Signed Overflow"/>
+      <a name="labelloc" val="east"/>
+    </comp>
     <comp lib="0" loc="(140,40)" name="Pin">
       <a name="facing" val="south"/>
       <a name="output" val="true"/>
@@ -235,48 +256,27 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <a name="label" val="Test #"/>
       <a name="labelloc" val="north"/>
     </comp>
-    <comp lib="6" loc="(443,407)" name="Text">
-      <a name="text" val="There should be no blue/red wires here, and the result shouldn't be x's."/>
-    </comp>
-    <comp lib="4" loc="(330,110)" name="ROM">
-      <a name="dataWidth" val="32"/>
-      <a name="contents">addr/data: 8 32
-ffffffff 0 aaaaaaaa ffff0000 f0000000
-</a>
-    </comp>
-    <comp lib="0" loc="(230,30)" name="Constant">
-      <a name="width" val="8"/>
-      <a name="value" val="0x6"/>
-    </comp>
     <comp lib="3" loc="(140,130)" name="Adder"/>
-    <comp lib="0" loc="(570,80)" name="Pin">
+    <comp lib="0" loc="(310,40)" name="Pin">
       <a name="facing" val="west"/>
       <a name="output" val="true"/>
-      <a name="label" val="Signed Overflow"/>
+      <a name="label" val="halt"/>
       <a name="labelloc" val="east"/>
     </comp>
-    <comp lib="3" loc="(290,40)" name="Comparator">
-      <a name="mode" val="unsigned"/>
-    </comp>
-    <comp lib="7" loc="(400,150)" name="main"/>
-    <comp lib="0" loc="(60,200)" name="Clock">
-      <a name="facing" val="north"/>
-    </comp>
-    <comp lib="4" loc="(330,330)" name="ROM">
-      <a name="dataWidth" val="4"/>
-      <a name="contents">addr/data: 8 4
-32*7
-</a>
-    </comp>
-    <comp lib="0" loc="(90,120)" name="Constant">
-      <a name="width" val="8"/>
-    </comp>
+    <comp lib="4" loc="(80,160)" name="Register"/>
     <comp lib="0" loc="(630,150)" name="Pin">
       <a name="facing" val="west"/>
       <a name="output" val="true"/>
       <a name="width" val="32"/>
       <a name="label" val="Result"/>
       <a name="labelloc" val="east"/>
+    </comp>
+    <comp lib="7" loc="(400,150)" name="main"/>
+    <comp lib="4" loc="(330,190)" name="ROM">
+      <a name="dataWidth" val="32"/>
+      <a name="contents">addr/data: 8 32
+0 ffffffff 55555555 f0000000 ffff0000 0 ffffffff
+</a>
     </comp>
   </circuit>
 </project>
