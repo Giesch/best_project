@@ -528,6 +528,10 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <a name="width" val="32"/>
       <a name="label" val="SEI"/>
     </comp>
+    <comp lib="0" loc="(840,260)" name="Tunnel">
+      <a name="width" val="32"/>
+      <a name="label" val="fetch_addr"/>
+    </comp>
     <comp lib="0" loc="(260,240)" name="Tunnel">
       <a name="width" val="32"/>
       <a name="label" val="PC"/>
@@ -627,6 +631,10 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <a name="bit30" val="3"/>
       <a name="bit31" val="3"/>
     </comp>
+    <comp lib="0" loc="(820,280)" name="Tunnel">
+      <a name="facing" val="north"/>
+      <a name="label" val="clk"/>
+    </comp>
     <comp lib="0" loc="(280,740)" name="Tunnel">
       <a name="label" val="slti?"/>
     </comp>
@@ -714,6 +722,10 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     </comp>
     <comp lib="0" loc="(190,730)" name="Tunnel">
       <a name="label" val="sltu?"/>
+    </comp>
+    <comp lib="4" loc="(700,370)" name="Register">
+      <a name="width" val="32"/>
+      <a name="label" val="Instruction delay"/>
     </comp>
     <comp lib="0" loc="(240,960)" name="Tunnel">
       <a name="facing" val="east"/>
@@ -810,7 +822,7 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     <comp lib="0" loc="(630,230)" name="Tunnel">
       <a name="facing" val="east"/>
       <a name="width" val="32"/>
-      <a name="label" val="instruction"/>
+      <a name="label" val="instruction2"/>
     </comp>
     <comp lib="0" loc="(300,460)" name="Tunnel">
       <a name="facing" val="east"/>
@@ -887,11 +899,6 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     </comp>
     <comp lib="0" loc="(120,560)" name="Tunnel">
       <a name="label" val="isR"/>
-    </comp>
-    <comp lib="0" loc="(40,170)" name="Tunnel">
-      <a name="facing" val="east"/>
-      <a name="width" val="32"/>
-      <a name="label" val="PC"/>
     </comp>
     <comp lib="0" loc="(70,1020)" name="Tunnel">
       <a name="facing" val="north"/>
@@ -1014,6 +1021,10 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     <comp lib="2" loc="(260,960)" name="Decoder">
       <a name="select" val="5"/>
       <a name="disabled" val="0"/>
+    </comp>
+    <comp lib="0" loc="(680,390)" name="Tunnel">
+      <a name="facing" val="north"/>
+      <a name="label" val="clk"/>
     </comp>
     <comp lib="0" loc="(1060,420)" name="Tunnel">
       <a name="width" val="32"/>
@@ -1197,10 +1208,6 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <a name="bit30" val="none"/>
       <a name="bit31" val="0"/>
     </comp>
-    <comp lib="0" loc="(40,170)" name="Tunnel">
-      <a name="width" val="32"/>
-      <a name="label" val="fetch_addr"/>
-    </comp>
     <comp lib="0" loc="(420,150)" name="Pin">
       <a name="width" val="32"/>
       <a name="tristate" val="false"/>
@@ -1302,6 +1309,10 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     <comp lib="1" loc="(460,510)" name="OR Gate">
       <a name="size" val="30"/>
       <a name="inputs" val="2"/>
+    </comp>
+    <comp lib="4" loc="(840,260)" name="Register">
+      <a name="width" val="32"/>
+      <a name="label" val="PC  delay"/>
     </comp>
     <comp lib="0" loc="(1010,600)" name="Tunnel">
       <a name="facing" val="north"/>
@@ -1501,6 +1512,10 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     <comp lib="0" loc="(460,360)" name="Constant">
       <a name="width" val="4"/>
     </comp>
+    <comp lib="0" loc="(700,370)" name="Tunnel">
+      <a name="width" val="32"/>
+      <a name="label" val="instruction2"/>
+    </comp>
     <comp lib="2" loc="(490,690)" name="Multiplexer">
       <a name="width" val="4"/>
       <a name="disabled" val="0"/>
@@ -1531,6 +1546,11 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     </comp>
     <comp lib="0" loc="(600,280)" name="Tunnel">
       <a name="label" val="link?"/>
+    </comp>
+    <comp lib="0" loc="(810,260)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="width" val="32"/>
+      <a name="label" val="PC"/>
     </comp>
     <comp lib="2" loc="(60,990)" name="Demultiplexer">
       <a name="width" val="5"/>
@@ -1618,6 +1638,11 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <a name="bit29" val="2"/>
       <a name="bit30" val="2"/>
       <a name="bit31" val="2"/>
+    </comp>
+    <comp lib="0" loc="(670,370)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="width" val="32"/>
+      <a name="label" val="instruction"/>
     </comp>
     <comp lib="2" loc="(80,930)" name="Decoder">
       <a name="select" val="5"/>
