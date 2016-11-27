@@ -1,0 +1,16 @@
+format of .out files
+$s0 Value (32-bit),	$s1 Value (32-bit),	$s2 Value (32-bit),	$ra Value (32-bit),	$sp Value (32-bit),	Time Step (32-bit),	Fetch Addr (32-bit),	Instruction (32-bit)
+
+All instructions: sll srl sra add addu addiu addi jal jr j slt sltu sltiu slti and or andi ori lui lw sw beq bne bltzal
+lui
+Adds: add addu addiu addi 
+Bools: and or andi ori 
+STLs: slt sltu sltiu slti
+Memops: lw sw
+Shifts: sll srl sra
+Jumps: jal jr j
+Branches: beq bne bltzal
+
+Filename formats:
+	prog file: cpu-[primary inst to test].s
+	output: cpu-[primary inst to test].out
