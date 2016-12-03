@@ -266,7 +266,7 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     </comp>
     <comp lib="0" loc="(300,450)" name="Constant">
       <a name="width" val="32"/>
-      <a name="value" val="0x4"/>
+      <a name="value" val="0x7"/>
     </comp>
     <comp lib="0" loc="(370,440)" name="Pin">
       <a name="facing" val="west"/>
