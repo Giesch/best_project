@@ -97,15 +97,15 @@ p1_tests = [
 ]
 
 p2_tests = [
-  ("CPU starter test",
-        TestCase(os.path.join(file_locations,'CPU-starter_kit_test.circ'),
-                 os.path.join(file_locations,'reference_output/CPU-starter_kit_test.out')), "cpu"),
-  ("CPU jump test",
-        TestCase(os.path.join(file_locations,'cpu-j.circ'),
-                 os.path.join(file_locations,'reference_output/cpu-j.out')), "cpu"),
-  ("CPU bne test",
-        TestCase(os.path.join(file_locations,'cpu-bne.circ'),
-                 os.path.join(file_locations,'reference_output/cpu-bne.out')), "cpu"),
+  #("CPU starter test",
+  #      TestCase(os.path.join(file_locations,'CPU-starter_kit_test.circ'),
+  #               os.path.join(file_locations,'reference_output/CPU-starter_kit_test.out')), "cpu"),
+  #("CPU jump test",
+  #      TestCase(os.path.join(file_locations,'cpu-j.circ'),
+  #               os.path.join(file_locations,'reference_output/cpu-j.out')), "cpu"),
+  #("CPU bne test",
+  #      TestCase(os.path.join(file_locations,'cpu-bne.circ'),
+  #               os.path.join(file_locations,'reference_output/cpu-bne.out')), "cpu"),
 ]
 
 if __name__ == '__main__':
