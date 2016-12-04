@@ -8,7 +8,7 @@ slti $s2, $s0, 50
 slti $s2, $s1, 50
 slti $s2, $s0, -50
 slti $s2, $s1, -50
-sltui $s2, $s0, 50
-sltui $s2, $s1, 50
-sltui $s2, $s0, -50
-sltui $s2, $s1, -50
+sltiu $s2, $s0, 50
+sltiu $s2, $s1, 50
+sltiu $s2, $s0, -50
+sltiu $s2, $s1, -50
