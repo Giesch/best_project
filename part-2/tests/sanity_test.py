@@ -103,9 +103,6 @@ p2_tests = [
   ("CPU jump test",
         TestCase(os.path.join(file_locations,'cpu-j.circ'),
                  os.path.join(file_locations,'reference_output/cpu-j.out')), "cpu"),
-  ("Shorter CPU jump test",
-        TestCase(os.path.join(file_locations,'short-cpu-j.circ'),
-                 os.path.join(file_locations,'reference_output/short-cpu-j.out')), "cpu"),
 ]
 
 if __name__ == '__main__':
