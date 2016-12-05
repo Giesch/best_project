@@ -112,6 +112,12 @@ p2_tests = [
   ("CPU blitzel test",
         TestCase(os.path.join(file_locations,'cpu-bltzal.circ'),
                  os.path.join(file_locations,'reference_output/cpu-bltzal.out')), "cpu"),
+  ("CPU lui test",
+        TestCase(os.path.join(file_locations,'cpu-lui.circ'),
+                 os.path.join(file_locations,'reference_output/cpu-lui.out')), "cpu"),
+  ("CPU beq test",
+        TestCase(os.path.join(file_locations,'cpu-beq.circ'),
+                 os.path.join(file_locations,'reference_output/cpu-beq.out')), "cpu"),
 ]
 
 if __name__ == '__main__':
